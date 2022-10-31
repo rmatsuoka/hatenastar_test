@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>はてなスターをテストするページ</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="https://s.hatena.ne.jp/js/HatenaStar.js"></script>
+  <script type="text/javascript">
+    Hatena.Star.SiteConfig = {
+      entryNodes: {
+        'div.section': {
+          uri: 'h3 a',
+          title: 'h3',
+          container: 'h3'
+        }
+      }
+    };
+  </script>
+</head>
+
+<body>
+  <h1>はてなスターをテストするページ</h1>
+  <div class="section">
+    <h3><a href="article/1.html">この記事とか</a></h3>
+  </div>
+  <div class="section">
+    <h3><a href="article/2.html">その記事とか</a></h3>
+  </div>
+  <div class="section">
+    <h3><a href="article/3.html">あの記事とか</a></h3>
+  </div>
+</body>
+</html>
